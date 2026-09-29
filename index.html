@@ -391,8 +391,8 @@ header{opacity:0;pointer-events:none;transform:translateY(-12px);transition:opac
 body.has-scrolled header{opacity:1;pointer-events:auto;transform:translateY(0);}
 #panel-home{min-height:100vh;}
 #panel-home .home-hero{min-height:100vh!important;height:100vh;padding:0!important;display:flex;align-items:center;}
-#panel-home .home-name-wrap{width:100%;min-height:100vh;position:relative;display:flex;align-items:center;justify-content:center;}
-#panel-home .home-name{margin:0!important;text-align:center;font-size:clamp(92px,13vw,190px)!important;line-height:.82!important;letter-spacing:-.055em!important;white-space:nowrap!important;display:inline-block;}
+#panel-home .home-name-wrap{width:100%;min-height:100vh;position:relative;display:flex;align-items:center;justify-content:center;overflow:visible;padding-inline:clamp(8px,1.5vw,24px);}
+#panel-home .home-name{margin:0!important;text-align:center;font-size:clamp(72px,11vw,170px)!important;line-height:.82!important;letter-spacing:-.055em!important;white-space:nowrap!important;display:inline-block;min-width:max-content;max-width:100%;}
 #panel-home .home-name-wrap > .eyebrow,
 #panel-home .home-role,
 #panel-home .home-intro-card,
@@ -402,7 +402,7 @@ body.has-scrolled header{opacity:1;pointer-events:auto;transform:translateY(0);}
 #panel-home .home-scroll-orbit text{font-size:9px;letter-spacing:2.5px;}
 #panel-home .orbit-arrow{position:absolute;left:50%;top:50%;transform:translate(-50%,-48%);font-size:34px;line-height:1;font-weight:300;}
 @media(max-width:800px){
-  #panel-home .home-name{font-size:clamp(64px,17vw,110px)!important;white-space:nowrap!important;}
+  #panel-home .home-name{font-size:clamp(42px,12vw,96px)!important;white-space:nowrap!important;min-width:max-content;max-width:100%;letter-spacing:-.05em!important;}
   #panel-home .home-scroll-orbit{width:100px;height:100px;bottom:24px;}
   #panel-home .orbit-arrow{font-size:29px;}
 }
@@ -451,7 +451,8 @@ header{display:none!important}
     max-width:100%;
     padding-inline:2px;
     white-space:nowrap!important;
-    font-size:clamp(40px,14vw,110px)!important;
+    min-width:max-content;
+    font-size:clamp(42px,12vw,96px)!important;
     line-height:.94!important;
   }
   #panel-home .career-logo strong{font-size:18px;}
